@@ -1,0 +1,44 @@
+# Мод метаданные для Minecraft Forge
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+issueTrackerURL="https://github.com/hollowengineai/issues"
+
+[[mods]]
+modId="hollowengineai"
+version="${version}"
+displayName="HollowEngineAI"
+description='''
+Advanced AI system for HollowEngine Legacy NPCs. 
+Transforms ordinary NPCs into intelligent agents with:
+- Local LLM integration via Ollama
+- Dynamic personality and memory systems
+- Autonomous decision making and world interaction
+- Extensible scripting API for custom behaviors
+'''
+logoFile="logo.png"
+credits="Built for HollowEngine Legacy mod"
+authors="HollowEngineAI Development Team"
+
+# Зависимости
+[[dependencies.hollowengineai]]
+modId="forge"
+mandatory=true
+versionRange="[43.3.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hollowengineai]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
+
+# HollowEngine Legacy как зависимость (если известен modId)
+# [[dependencies.hollowengineai]]
+# modId="hollowengine"
+# mandatory=true
+# versionRange="[1.0,)"
+# ordering="AFTER"
+# side="BOTH"
